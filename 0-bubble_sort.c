@@ -10,9 +10,9 @@
  */
 void bs_swap(int *a, int *b)
 {
-    iint tmp = *a;
-    *a = *b;
-    *b = tmp;
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
 /**
@@ -26,17 +26,17 @@ void bs_swap(int *a, int *b)
  */
 void bubble_sort(int *ar, size_t size)
 {
-    size_t i, j;
+	size_t i, j;
 
-    for (j = 0; j < size; ++j)
-    {
-        for (i = 0; i < size - 1; ++i)
-        {
-            if (ar[i] > ar[i + 1])
-            {
-                bs_swap(&ar[i], &ar[i + 1]);
-                print_array(ar, size);
-            }
-        }
-    }
+	for (j = 0; j < size; ++j)
+	{
+		for (i = 0; i < size - 1; ++i)
+		{
+			if (ar[i] > ar[i + 1])
+			{
+				bs_swap(&ar[i], &ar[i + 1]);
+				print_array(ar, size);
+			}
+		}
+	}
 }

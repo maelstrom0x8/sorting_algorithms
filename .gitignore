@@ -135,5 +135,6 @@ tags
 build
 testing
 utils.c
-main.c
+main*
 build
+run.sh
